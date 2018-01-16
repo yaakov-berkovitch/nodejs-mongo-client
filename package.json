@@ -1,0 +1,8 @@
+{
+  "name": "nodejs-mongo-client",
+  "version": "0.0.1",
+  "dependencies": {
+    "mongoose"							: "5.0.0-rc0"
+  }
+}
+
