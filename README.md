@@ -18,6 +18,7 @@ docker run --rm --network NETWORK-NAME --name nodejs-mongo-client nodejs-mongo-c
 Before creating the service, set the environment variables:
 * NETWORK_NAME: this your swarm overlay network
 * SERVICE_NAME: service name that will be pusblished by swarm
+<br><br>
 docker service create \
 		--mode global \
 		--network ${NETWORK_NAME} \
