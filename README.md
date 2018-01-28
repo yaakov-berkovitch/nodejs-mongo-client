@@ -16,7 +16,7 @@ __docker run__ -d \
 	--rm \
 	--network ${NETWORK_NAME} \
 	--name nodejs-mongo-client \
-	--env MONGODB_SERVER_NAME=<swarm service name or mongo server IP/Name> \
+	--env MONGODB_SERVER_NAME=(swarm service name or mongo server IP/Name) \
 	--env LISTEN_PORT=3000 \
 	--publish 3331:3000 \
 	nodejs-mongo-client:0.0.1
@@ -33,7 +33,7 @@ __docker service create__ \
 	--mode global \
 	--network ${NETWORK_NAME} \
 	--name nodejs-mongo-client \
-	--env MONGODB_SERVER_NAME=<swarm mongo service name> \
+	--env MONGODB_SERVER_NAME=(swarm mongo service name) \
 	--env LISTEN_PORT=3000 \
 	--publish target=3000,published=3331 \
 	nodejs-mongo-client:0.0.1
