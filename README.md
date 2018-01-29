@@ -42,4 +42,5 @@ To check your service is created and running, run docker service ls
 ## Check your service
 * list the existing users : curl http://localhost:3331/users
 * get specific user : curl http://localhost:3331/user/<username>
+* create a new user: curl -X POST http://localhost:3331/user -d '{"email":"user1@domain.com","password":"user1"}' -H "Content-Type: application/json"
 
